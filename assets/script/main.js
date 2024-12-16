@@ -122,11 +122,10 @@ function clienty(event) {
 
 const interface_button = document.querySelector("a:nth-of-type(10)");
 
-// Luister naar het pointerdown event
-interface_button.addEventListener("pointerdown", clienty);
+interface_button.addEventListener("pointerdown", colors);
 
-function clienty(event) {
-  console.log(event.clientY);
+function colors(event) {
+  console.log(event.colors);
 
   interface_button.classList.toggle("interface-button");
 }
