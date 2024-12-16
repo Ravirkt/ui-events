@@ -12,6 +12,7 @@ function jumpHandler() {
 // knop 1 frontend kleur veranderen
 // mouseover event
 let interactionFrontend = document.querySelector("a:nth-of-type(1)");
+let rocket = document.getElementById("rocket");
 
 interactionFrontend.addEventListener("mouseover", () => {
   rocket.classList.add("animate");
@@ -30,7 +31,6 @@ rocket.addEventListener("animationend", () => {
 const design_button = document.querySelector("a:nth-of-type(2)");
 
 design_button.addEventListener("click", rotate);
-design_button.addEventListener("animationend", rotate);
 
 function rotate() {
   design_button.classList.toggle("button-design");
