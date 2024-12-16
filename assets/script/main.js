@@ -99,10 +99,10 @@ function fall() {
 // keypress event
 const flow_button = document.querySelector("a:nth-of-type(8)");
 
-flow_button.addEventListener("keypress", count);
+flow_button.addEventListener("keypress", keys);
 
-function count(event) {
-  console.log("teststsetse");
+function keys(event) {
+  console.log("tests");
   flow_button.textContent = event.key;
 }
 
