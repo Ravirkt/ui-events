@@ -7,15 +7,23 @@ function jumpHandler() {
   interaction.classList.toggle("jump");
 }
 
+// ///////////////////////////////////////////////////////////////////////////////////
+
 // knop 1 frontend kleur veranderen
 // mouseover event
 let interactionFrontend = document.querySelector("a:nth-of-type(1)");
 
-interactionFrontend.addEventListener("mouseover", backgroundColor);
-
-function backgroundColor() {
+interactionFrontend.addEventListener("mouseover", () => {
+  rocket.classList.add("animate");
   interactionFrontend.classList.toggle("button-frontend");
-}
+  document.body.classList.toggle("body-color");
+});
+
+rocket.addEventListener("animationend", () => {
+  rocket.classList.remove("animate");
+});
+
+// ///////////////////////////////////////////////////////////////////////////////////
 
 // knop 2 Design veranderen van kleur en rotaten
 // click event
