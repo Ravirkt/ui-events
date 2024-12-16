@@ -17,6 +17,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   background: var(--secondary);
+  overflow: hidden;
 }
 section {
   max-width: 90vw;
@@ -77,15 +78,48 @@ a:nth-of-type(12) {
     transform: scale(1, 1) translateY(0);
   }
 }
+/* // /////////////////////////////////////////////////////////////////////////////////// */
 
 /* Jouw animaties */
 
 /* knop 1 frontend */
-
+/* mouseover event */
 .button-frontend {
-  background-color: green;
+  background-color: rgb(237, 8, 8);
   color: white;
+  border-color: #fff;
 }
+
+.body-color {
+  background-color: #000000;
+}
+
+body {
+  position: relative;
+}
+
+.rocket {
+  position: absolute;
+  rotate: -90deg;
+  right: -60%;
+  transform: translateY(-10%);
+  transition: transform 2s ease-in-out;
+}
+
+@keyframes raket {
+  from {
+    right: -80%;
+  }
+  to {
+    right: 110%;
+  }
+}
+
+.rocket.animate {
+  animation: raket 3s forwards;
+}
+
+/* // /////////////////////////////////////////////////////////////////////////////////// */
 
 /* knop 2 Design */
 .button-design {
@@ -97,7 +131,6 @@ a:nth-of-type(12) {
 @keyframes rotate {
   0% {
     transform: rotate(10deg);
-    transform: scale(1.2);
     background-color: peru;
     color: white;
   }
@@ -133,6 +166,8 @@ a:nth-of-type(12) {
   }
 }
 
+/* // /////////////////////////////////////////////////////////////////////////////////// */
+
 /* knop 3 & */
 
 .button-and {
@@ -163,11 +198,13 @@ a:nth-of-type(12) {
   }
 }
 
+/* // /////////////////////////////////////////////////////////////////////////////////// */
+
 /* knop 4 Development */
 
 .development-button {
-  animation-name: shake;
-  animation-duration: 10s;
+  animation: shake 0.5s ease-in-out;
+  animation-duration: 3;
 }
 
 @keyframes shake {
@@ -216,38 +253,25 @@ a:nth-of-type(12) {
   }
 }
 
-.development-button {
-  animation: shake 0.5s ease-in-out;
-}
+/* // /////////////////////////////////////////////////////////////////////////////////// */
 
 /* knop 5  sprint 5 */
 .sprint-button {
-  animation-name: tilt;
-  animation-duration: 10s;
+  animation-name: zoom;
+  animation-duration: 2s;
 }
 
-@keyframes tilt {
-  5% {
-    transform: rotate(10deg);
+@keyframes zoom {
+  0% {
+    transform: scale(2000);
   }
 
-  10% {
-    transform: rotate(15deg);
-  }
-
-  15% {
-    transform: rotate(20deg);
-  }
-  20% {
-    transform: rotate(25deg);
-  }
-  25% {
-    transform: rotate(30deg);
-  }
-  30% {
-    transform: rotate(40deg);
+  100% {
+    transform: scale(1);
   }
 }
+
+/* // /////////////////////////////////////////////////////////////////////////////////// */
 
 /* knop 6  fix */
 .fix-button {
@@ -270,6 +294,8 @@ a:nth-of-type(12) {
   }
 }
 
+/* // /////////////////////////////////////////////////////////////////////////////////// */
+
 /* knop 7 the */
 .the-button {
   animation-name: fall;
@@ -287,22 +313,7 @@ a:nth-of-type(12) {
   }
 }
 
-/* knop 8 flow */
-.flow-button {
-  animation-name: fall;
-  animation-duration: 10s;
-}
-
-@keyframes fall {
-  0% {
-    transform: translateY(-100);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(100vh);
-    opacity: 0;
-  }
-}
+/* // /////////////////////////////////////////////////////////////////////////////////// */
 
 /* knop 10 interface */
 .interface-button {
