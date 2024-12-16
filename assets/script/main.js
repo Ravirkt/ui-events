@@ -66,9 +66,9 @@ function shake(event) {
 // load event
 const sprint_button = document.querySelector("a:nth-of-type(5)");
 
-window.addEventListener("load", tilt);
+window.addEventListener("load", zoom);
 
-function tilt() {
+function zoom() {
   console.log("tetststststs");
   sprint_button.classList.toggle("sprint-button");
 }
