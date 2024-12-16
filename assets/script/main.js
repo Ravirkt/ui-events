@@ -36,6 +36,8 @@ function rotate() {
   design_button.classList.toggle("button-design");
 }
 
+// /////////////////////////////////////////////////////////////////////////////////
+
 // knop 3 &  verdwijnen van button
 // mousedown event
 const and_button = document.querySelector("a:nth-of-type(3)");
@@ -46,6 +48,8 @@ function scale() {
   console.log("jfsdfsf");
   and_button.classList.toggle("button-and");
 }
+
+// //////////////////////////////////////////////////////////////////////////////////
 
 // knop 4 Development shaking button
 // keydown event
@@ -62,6 +66,8 @@ function shake(event) {
   }
 }
 
+// ///////////////////////////////////////////////////////////////////////////////////
+
 // knop 5 sprint 5 button
 // load event
 const sprint_button = document.querySelector("a:nth-of-type(5)");
@@ -72,6 +78,8 @@ function zoom() {
   console.log("tetststststs");
   sprint_button.classList.toggle("sprint-button");
 }
+
+// ///////////////////////////////////////////////////////////////////////////////////
 
 // knop 6 fix
 // keyup event
@@ -84,8 +92,10 @@ function pulse() {
   fix_button.classList.toggle("fix-button");
 }
 
+// ///////////////////////////////////////////////////////////////////////////////////
+
 // knop 7 the
-// keyup event
+// double click event
 const the__button = document.querySelector("a:nth-of-type(7)");
 
 the__button.addEventListener("dblclick", fall);
@@ -94,6 +104,8 @@ function fall() {
   console.log("teststsetse");
   the__button.classList.toggle("the-button");
 }
+
+// ///////////////////////////////////////////////////////////////////////////////////
 
 // knop 8 flow
 // keypress event
@@ -106,6 +118,8 @@ function keys(event) {
   flow_button.textContent = event.key;
 }
 
+// ///////////////////////////////////////////////////////////////////////////////////
+
 // knop 9 user
 // mouse over clienty
 const user_button = document.querySelector("a:nth-of-type(9)");
@@ -116,6 +130,8 @@ function clienty(event) {
   console.log("teststsetse");
   user_button.textContent = event.clientY;
 }
+
+// ///////////////////////////////////////////////////////////////////////////////////
 
 // knop 10 interface
 // mouse over clienty
